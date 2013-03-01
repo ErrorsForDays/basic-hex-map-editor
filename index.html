@@ -1,0 +1,112 @@
+<html lang="en">
+	<head>
+		<title>Basic Hex Map Editor</title>
+		<link href="hexMapEditor.css" rel="stylesheet" type="text/css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	</head>
+	<body>
+		<div id="menu" class="ui">
+			<div class="backgroundDiv"></div>
+			<div class="contentDiv">
+				<h1>Basic Hex Map Editor</h1>
+				<p>
+				by ErrorsForDays@gmail.com<br>
+				http://www.github.com/errorsfordays/basic-hex-map-editor/<br>
+				</p>
+				<button id="startButton" class="button">New Map</button>
+			</div>
+		</div>
+		<div id="settingsToggleDiv" class="ui">
+			<div class="backgroundDiv"></div>
+			<div id="settingsToggleDivContentDiv" class="contentDiv">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<div id="settingsDiv" class="ui">
+			<div class="backgroundDiv"></div>
+			<div class="contentDiv">
+				<h3>Settings</h3>
+				<button id="settingsButton1" class="button"></button><br>
+				<button id="settingsButton2" class="button"></button><br>
+				<button id="settingsButton3" class="button"></button><br>
+				<button id="settingsButton4" class="button"></button><br>
+				<button id="settingsButton5" class="button"></button><br>
+				<button id="settingsButton6" class="button"></button><br>
+				<button id="settingsButton7" class="button"></button><br>
+			</div>
+		</div>
+		<div id="editTileDiv" class="ui">
+			<div class="backgroundDiv"></div>
+			<div class="contentDiv"></div>
+		</div>
+		<div id="materialsListDiv" class="ui">
+			<div class="backgroundDiv"></div>
+			<div class="contentDiv"></div>
+		</div>
+		<div id="importExportDiv" class="ui">
+			<div class="backgroundDiv"></div>
+			<div class="contentDiv">
+				<h2>Import / Export</h2>
+				<textarea id='importExportTextarea' cols='100' rows='20' placeholder='Paste a map here.'></textarea><br>
+				<button id="importButton" class="button">Import</button>
+				<button id="exportButton" class="button">Export</button>
+				<button id="closeImportExportButton" class="button">CLOSE</button>
+			</div>
+		</div>
+		<div id="instructionsDiv" class="ui">
+			<div class="contentDiv">
+				<h2>Controls</h2>
+				<ul>
+					<li>Left click and drag to move map.</li>
+					<li>Middle click and drag to rotate map.</li>
+					<li>Mouse wheel to zoom.</li>
+					<li>Click a tile to select it.</li>
+					<li>Add new tiles to the map by selecting a tile at the edge, then click new tile.</li>
+					<li>Click and drag the blue arrows above the selected tile to change its height.</li>
+					<li>The clone tool from the menu makes editing big maps much quicker.</li>
+					<li>Edit or add materials from the materials list in the menu.</li>
+					<li>Red arrow indicates the center tile. Double click a tile to make it the center tile.</li>
+				</ul>
+				<button class="button" onclick="$('#instructionsDiv, #settingsDiv').toggle();">CLOSE</button>
+			</div>
+		</div>
+		<div id="tipDiv" class="ui">
+			<div class="backgroundDiv"></div>
+			<div class="contentDiv">
+				<h2>Tip: Menu</h2>
+				The menu button is in the top right corner.<br>
+				Use it to see the controls, import/export maps, or change settings.<br>
+				<button class="button" onclick="$('#tipDiv').toggle();">OK</button>
+			</div>
+		</div>
+		<div id="mapSamplesDiv" class="ui">
+			<div class="backgroundDiv"></div>
+			<div class="contentDiv"></div>
+		</div>
+		<div id="cloneDiv" class="ui">
+			<div class="backgroundDiv"></div>
+			<div class="contentDiv"></div>
+		</div>
+		<div id="loadingDiv" class="ui">
+			<div class="backgroundDiv"></div>
+			<div class="contentDiv">
+				Loading Map...<br><span id='loadcount'>0</span> tiles loaded.
+			</div>
+		</div>
+		
+		<script src="javascripts/three.min.56.js"></script>
+		<script src="javascripts/stats.min.js"></script>
+		<script src="javascripts/AnaglyphEffect.js"></script>
+		<script src="javascripts/helvetiker_regular.typeface.js"></script>
+		<script src="javascripts/jquery-1.8.3.js"></script>
+		<script src="hexMapEditor.js"></script>
+		<script src="hexMap.js"></script>
+		<script src="hexTile.js"></script>
+		<script>
+			window.addEventListener("load", HexMapEditor.init);
+		</script>
+	</body>
+</html>
+

@@ -1,0 +1,125 @@
+body {
+	background-color: #fff;
+	background-image: url(grid.jpg);
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.ui {
+	position: absolute;
+	display: none;
+	-webkit-user-select: none;
+	font-family: "verdana", sans-serif;
+	border: 3px solid #043d52;
+	border-radius: 5px;
+	color: #043d52;
+}
+.ui fieldset{
+	border: 3px solid #2e5869;
+	border-radius: 3px;
+	margin: 0;
+}
+.ui fieldset legend{
+	text-align: left;
+}
+.contentDiv{
+	position: relative;
+	display: inline-table;
+	width: 100%; height: 100%;
+	padding: 10px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.backgroundDiv{
+	position: absolute;
+	width: 100%; height: 100%;
+	border: 0px solid #fff;
+	border-radius: 2px;
+	background-color: #9acee2;
+	opacity: 0.5;
+}
+.button {
+	width: 160px;
+	height: 25px;
+	background-color: #ffd6aa;
+	border: 3px solid #ff921b;
+	border-radius: 5px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #834604;
+	margin: 5px;
+}
+#menu{
+	position: absolute;
+	top: 50%; left: 50%;
+	margin: -100 0 0 -250;
+}
+#importExportDiv{
+	top:50%; left: 50%;
+	margin: -200 0 0 -375;
+}
+#tipDiv{
+	top:30%; left: 50%;
+	margin: -75 0 0 -285;
+}
+#instructionsDiv{
+	top: 50%; left: 50%;
+	margin: -200 0 0 -350;
+	background-color: #9acee2;
+	overflow: auto;
+}
+#instructionsDiv .contentDiv ul{
+	text-align: left;
+}
+#materialsListDiv{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+#settingsToggleDiv{
+	position: absolute;
+	top: 10px; right: 10px;
+	width: 31;
+	height: 33;
+	opacity: 0.5;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+#settingsToggleDiv .contentDiv div{
+	width: 12px;
+	border: 2px solid #ffb86b;
+	border-radius: 2px;
+	margin: 3px;
+}
+#settingsToggleDiv:hover {
+	opacity: 1;
+}
+#settingsDiv{
+	position: absolute;
+	top: 10px; right: 10px;
+}
+#settingsToggleDivContentDiv{
+	margin: 5px;
+	padding: 0px;
+}
+#editTileDiv{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+#mapSamplesDiv{
+	top: 10px; right: 10px;
+}
+#cloneDiv{
+	top: 10px; right: 10px;
+}
+#loadingDiv{
+	top: 50%; left: 50%;
+	margin: -50 0 0 -100;
+}
+.contentDiv td{
+	vertical-align: middle;
+}
+
