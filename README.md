@@ -3,7 +3,7 @@ basic-hex-map-editor
 
 Browser based basic hex map editor.
 
-Try it here: http://errorsfordays.github.com/basic-hex-map-editor/
+Try it here: http://errorsfordays.github.io/basic-hex-map-editor/
 Works best in Chrome.
 
 Thank you to the authors of three.js for making such a fantastic library.
